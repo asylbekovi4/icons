@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+    background-color: black;
+}
+
+.icons{
+    justify-content: center;
+    list-style: none;
+    border: 3px solid gold;
+    width: 700px;
+    height: 100px;
+    box-shadow: 0 0 10px 5px rgb(231, 131, 16);
+}
+
+.icons>li{
+    width: 70px;
+    height: 70px;
+    
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+   
+}
+
+.icons li::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 3px solid gold;
+    transition: all 0.5s ease-in;
+}
+
+.icons li:hover::before{
+    border-radius: 100%;
+    transform: rotate(360deg);
+    box-shadow: 0 0 10px 5px rgb(231, 131, 16);
+}
+
+.icons li a i{
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgb(231, 34, 149);
+    transition: 1s;
+    
+}
+
+.icons li:hover a i{
+    transform: scale(1.2);
+    color: rgb(193, 218, 53);
+}
+
+@media (max-width:770px){
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+    background-color: black;
+}
+
+.icons{
+    justify-content: center;
+    list-style: none;
+    border: 3px solid gold;
+    width: 130px;
+    height: 500px;
+    margin-top: 150px;
+    padding-top: 100px;
+    box-shadow: 0 0 10px 5px rgb(231, 131, 16);
+    position: absolute;
+    top:63px;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.icons>li{
+    width: 70px;
+    height: 70px;
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+   
+}
+
+.icons li::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 3px solid gold;
+    transition: all 0.5s ease-in;
+}
+
+.icons li:hover::before{
+    border-radius: 100%;
+    transform: rotate(360deg);
+    box-shadow: 0 0 10px 5px rgb(231, 131, 16);
+}
+
+.icons li a i{
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgb(231, 34, 149);
+    transition: 1s;
+    
+}
+
+.icons li:hover a i{
+    transform: scale(1.2);
+    color: rgb(193, 218, 53);
+}
+}
